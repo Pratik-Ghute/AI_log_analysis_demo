@@ -18,7 +18,7 @@ Before running the program, install the required dependencies by running the fol
 
 ```bash
 pip install -r requirements.txt
-
+```
 Required Python packages:
 huggingface_hub: To interact with Hugging Face models.
 transformers: For tokenization and model inference.
@@ -26,7 +26,7 @@ argparse: For handling command-line arguments.
 Setup
 Get a Hugging Face Token: To use the Hugging Face model, you need an API token. You can get it by logging into Hugging Face and navigating to Settings -> Access Tokens. Copy your token and paste it into the config.py file in the HUGGINGFACE_TOKEN variable.
 
-Download the Model: The model used in this project is meta-llama/Meta-Llama-3-8B-Instruct. The first time you run the program, it will automatically download the necessary model weights from Hugging Face.
+Use Inference Endpoints or Download the Model (To run on local server): The model used in this project is meta-llama/Meta-Llama-3-8B-Instruct. The first time you run the program, it will automatically download the necessary model weights from Hugging Face.
 
 Directory Structure: The project consists of the following files:
 
@@ -56,16 +56,18 @@ If you want to analyze a full log file, provide the path to the log file and spe
 
 bash
 Copy code
-python main.py path/to/logfile.log file --output terminal
+```bash
+python main.py path/to/logfile.log file --output terminal 
+```
 This will process the log file and print the output to the terminal.
 
 For a Single Log Entry:
 
 If you only have a single log entry to analyze, provide the log entry as a string and specify single as the log type:
 
-bash
-Copy code
+```bash
 python main.py "Your single log entry" single --output file
+```
 This will process the single log entry and save the result in a .txt file.
 
 Custom Output File:
@@ -75,8 +77,6 @@ By default, the output will be saved in a file with the name output_<timestamp>.
 Example Output
 Once the program processes the log data, it will output a response like this:
 
-yaml
-Copy code
 Error Description: Network connectivity issue detected.
 Possible Cause: The server may have experienced a network timeout or loss of connection.
 Recommended Solution: Check the network connection, reboot the server, or contact the network administrator for further assistance.
