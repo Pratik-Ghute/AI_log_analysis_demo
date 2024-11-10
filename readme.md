@@ -95,25 +95,28 @@ Feel free to open an issue for any problems or improvements you find!
 # **Future Scope**
 
 
-Optimized Output Handling:
+### Optimized Output Handling:
 
 Implement advanced handling techniques for analyzing entire log files, allowing users to specify the level of detail in the output—whether focusing on critical errors, specific log entries, or comprehensive summaries. This flexibility will improve the usability and precision of the system based on different use cases.
 Intelligent Log Knowledge Integration:
 
 Enhance the system’s ability to "understand" log data better by designing prompts that focus only on relevant log patterns. This will involve using domain-specific knowledge to fine-tune the system’s output, ensuring it responds in a more contextually accurate and actionable manner. Over time, this will allow the model to adapt to emerging log formats and evolving system behaviors.
-Advanced Model Utilization:
+
+### Advanced Model Utilization:
 
 Future work will include leveraging larger, more advanced models (e.g., GPT-4, or specialized domain models) for improved precision in log anomaly detection and solution generation. These models will enable the system to handle more complex logs, providing more nuanced insights and recommendations.
-Log Sequence and Context Awareness:
+
+###Log Sequence and Context Awareness:
 
 Develop techniques that understand the sequential nature of logs, utilizing regular expressions (regex) to identify and isolate error patterns, threats, or anomalies more efficiently. This will optimize the model’s performance by processing only relevant logs, reducing token usage and improving output clarity, accuracy, and speed.
-Lightweight ML Techniques for Error Identification:
+
+###Lightweight ML Techniques for Error Identification:
 
 Where logs are under the user’s control or generated internally, machine learning methods such as regex combined with lightweight, non-computationally expensive algorithms can be used to flag errors and suggest resolutions in real-time. This minimizes processing overhead while ensuring actionable insights.
-Incorporating Retrieval-Augmented Generation (RAG):
+### Incorporating Retrieval-Augmented Generation (RAG):
 
 Integrating RAG (Retrieval-Augmented Generation) to enhance log analysis by combining generative models with document retrieval. This will allow the system to reference existing knowledge bases and logs to improve error detection and solution generation. Future implementations will require additional subject matter expertise to fine-tune the integration of these techniques and ensure their efficiency in real-world scenarios.
-Interactive Log Feedback Loop:
+### Interactive Log Feedback Loop:
 
 Develop a feedback loop that allows users to refine log analysis through interaction. By utilizing a hybrid approach of human-in-the-loop with machine learning, users will be able to teach the system how to improve analysis over time, further enhancing the accuracy and quality of outputs.
 
@@ -192,12 +195,13 @@ Real-time Log Monitoring: These systems allow for real-time log aggregation and 
 Scalability: The use of distributed log management systems ensures that logs from hundreds or thousands of services are aggregated and searchable without performance degradation.
 
 
-**Conclusion**
+## **Conclusion**
 Scaling the log analysis system requires a combination of strategies:
 
-Docker & Kubernetes for containerization and orchestration.
-Queue-Based Job Processing for asynchronous, parallel processing of logs.
-Cloud-based Auto-Scaling for seamless model inference.
-Log Partitioning & Parallel Processing to handle large log files efficiently.
-RAG and knowledge bases for more accurate and context-aware results.
-Centralized Logging & Monitoring for scalable and efficient log management.
+### Docker & Kubernetes for containerization and orchestration.
+### Queue-Based Job Processing for asynchronous, parallel processing of logs.
+### Cloud-based Auto-Scaling for seamless model inference.
+### Using Paid APi endpoint or self hosting model for reliability.
+### Log Partitioning & Parallel Processing to handle large log files efficiently.
+### RAG and knowledge bases for more accurate and context-aware results.
+### Centralized Logging & Monitoring for scalable and efficient log management.
