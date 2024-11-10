@@ -1,5 +1,5 @@
 # Hugging Face token and model settings
-HUGGINGFACE_TOKEN = "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" ##this is my free personal token replace it with yours this isnt paid token
+HUGGINGFACE_TOKEN = "REPLACE_YOUR_HUGGINFACE_TOKEN_HERE" ##this is my free personal token replace it with yours this isnt paid token
 
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 
